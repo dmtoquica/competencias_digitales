@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1: Partes del PC - Competencias Digitales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header / Nav -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="text-blue-600"></i>
+                <span class="font-bold text-lg tracking-tight">CompDigitales</span>
+            </div>
+            <div class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#inicio" class="hover:text-blue-600">Inicio</a>
+                <a href="#conceptos" class="hover:text-blue-600">¿Qué es?</a>
+                <a href="#internas" class="hover:text-blue-600">Partes Internas</a>
+                <a href="#externas" class="hover:text-blue-600">Periféricos</a>
+                <a href="#practica" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Actividad</a>
+                <a href="simulador.html">Ir al simulador</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative py-20 overflow-hidden bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 relative z-10 text-center">
+            <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-semibold mb-4 uppercase tracking-widest italic">Clase 1: Electiva</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Las Partes del PC</h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+                “Antes de aprender software o internet, necesitamos entender la herramienta principal. <span class="text-blue-400 font-semibold italic">Hoy vamos a abrirlo… virtualmente.</span>”
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="document.getElementById('conceptos').scrollIntoView()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">Comenzar Exploración</button>
+            </div>
+        </div>
+        <!-- Background elements -->
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+    </header>
+
+    <!-- ¿Qué es un computador? -->
+    <section id="conceptos" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">¿Qué es un Computador?</h2>
+            <p class="text-slate-600">Una máquina electrónica capaz de transformar datos en soluciones.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 mb-16">
+            <div class="step-node flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-slate-100 w-full md:w-1/4">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="keyboard"></i>
+                </div>
+                <h3 class="font-bold mb-1">Entrada</h3>
+                <p class="text-xs text-center text-slate-500">Recibe información (Teclado, Mouse)</p>
+            </div>
+            
+            <div class="step-node flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-slate-100 w-full md:w-1/4">
+                <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="settings"></i>
+                </div>
+                <h3 class="font-bold mb-1">Procesamiento</h3>
+                <p class="text-xs text-center text-slate-500">El procesador trabaja los datos</p>
+            </div>
+
+            <div class="step-node flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-slate-100 w-full md:w-1/4">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="database"></i>
+                </div>
+                <h3 class="font-bold mb-1">Almacenamiento</h3>
+                <p class="text-xs text-center text-slate-500">Se guarda en el disco duro</p>
+            </div>
+
+            <div class="step-node flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-slate-100 w-full md:w-1/4">
+                <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="monitor"></i>
+                </div>
+                <h3 class="font-bold mb-1">Salida</h3>
+                <p class="text-xs text-center text-slate-500">Entrega un resultado (Pantalla)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partes Internas -->
+    <section id="internas" class="py-20 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-2">Partes Internas</h2>
+                <p class="text-slate-600">Lo que hace que la magia ocurra bajo el capó.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Placa Madre -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Motherboard" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-[10px] font-bold rounded uppercase">Motherboard</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 italic">La Placa Madre</h3>
+                        <p class="text-sm text-slate-600 mb-4">Es la tarjeta principal que conecta y permite la comunicación entre todos los componentes.</p>
+                        <div class="p-3 bg-blue-50 border-l-4 border-blue-500 text-sm">
+                            <strong>🧠 Analogía:</strong> Es como el <span class="font-semibold text-blue-700">sistema nervioso</span> del cuerpo.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Procesador -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop" alt="CPU" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-[10px] font-bold rounded uppercase">CPU</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 italic">El Procesador</h3>
+                        <p class="text-sm text-slate-600 mb-4">Es el cerebro del computador. Hace cálculos y ejecuta instrucciones de los programas.</p>
+                        <div class="p-3 bg-purple-50 border-l-4 border-purple-500 text-sm">
+                            <strong>⚡ Frase clave:</strong> "Sin procesador, el computador no piensa".
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memoria RAM -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop" alt="RAM" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="px-2 py-0.5 bg-green-100 text-green-700 text-[10px] font-bold rounded uppercase">RAM</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 italic">Memoria RAM</h3>
+                        <p class="text-sm text-slate-600 mb-4">Memoria temporal. Guarda información mientras el equipo está encendido.</p>
+                        <div class="p-3 bg-green-50 border-l-4 border-green-500 text-sm">
+                            <strong>⚠️ Dato:</strong> Al apagar el computador, lo que está aquí <span class="text-red-600 font-bold underline">se borra</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HDD vs SSD -->
+            <div class="mt-16 bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-indigo-100 text-indigo-600 rounded-xl">
+                        <i data-lucide="hard-drive"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold italic">Almacenamiento: HDD vs SSD</h3>
+                        <p class="text-slate-500 text-sm">Donde tus archivos viven para siempre.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="font-semibold italic">HDD (Disco Duro)</span>
+                            <span class="px-2 py-1 bg-amber-100 text-amber-700 text-[10px] font-bold rounded">Mecánico</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-600 ml-4">
+                            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 text-slate-400"></i> Más lento al leer</li>
+                            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 text-slate-400"></i> Más económico</li>
+                            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 text-slate-400"></i> Usa discos giratorios</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 bg-blue-50 rounded-xl border border-blue-100">
+                            <span class="font-semibold italic">SSD (Unidad Sólida)</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold rounded">Electrónico</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-600 ml-4">
+                            <li class="flex items-center gap-2"><i data-lucide="zap" class="w-4 text-blue-500"></i> Mucho más rápido</li>
+                            <li class="flex items-center gap-2"><i data-lucide="zap" class="w-4 text-blue-500"></i> Más costoso</li>
+                            <li class="flex items-center gap-2"><i data-lucide="zap" class="w-4 text-blue-500"></i> Silencioso y resistente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partes Externas -->
+    <section id="externas" class="py-20 max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">Periféricos y Partes Externas</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 italic">
+            <div class="group cursor-pointer">
+                <div class="w-24 h-24 mx-auto bg-white shadow-md rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition group-hover:bg-blue-600 group-hover:text-white">
+                    <i data-lucide="monitor" class="w-10 h-10"></i>
+                </div>
+                <h4 class="font-bold">Monitor</h4>
+                <p class="text-xs text-slate-500 mt-1">Dispositivo de SALIDA</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="w-24 h-24 mx-auto bg-white shadow-md rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition group-hover:bg-blue-600 group-hover:text-white">
+                    <i data-lucide="keyboard" class="w-10 h-10"></i>
+                </div>
+                <h4 class="font-bold">Teclado</h4>
+                <p class="text-xs text-slate-500 mt-1">Dispositivo de ENTRADA</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="w-24 h-24 mx-auto bg-white shadow-md rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition group-hover:bg-blue-600 group-hover:text-white">
+                    <i data-lucide="mouse-pointer-2" class="w-10 h-10"></i>
+                </div>
+                <h4 class="font-bold">Mouse</h4>
+                <p class="text-xs text-slate-500 mt-1">Interacción Gráfica</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividad Práctica (Cierre) -->
+    <section id="practica" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 italic">¡Desafío Rápido!</h2>
+            <div id="quiz-container" class="bg-white text-slate-900 p-8 rounded-3xl shadow-2xl">
+                <p id="quiz-question" class="text-xl font-semibold mb-6">¿Qué componente se encarga de guardar archivos permanentemente?</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button onclick="checkAnswer(false)" class="p-4 border-2 border-slate-200 rounded-xl hover:bg-slate-50 transition font-medium">Memoria RAM</button>
+                    <button onclick="checkAnswer(true)" class="p-4 border-2 border-slate-200 rounded-xl hover:bg-slate-50 transition font-medium">Disco Duro / SSD</button>
+                    <button onclick="checkAnswer(false)" class="p-4 border-2 border-slate-200 rounded-xl hover:bg-slate-50 transition font-medium">Procesador</button>
+                    <button onclick="checkAnswer(false)" class="p-4 border-2 border-slate-200 rounded-xl hover:bg-slate-50 transition font-medium">Placa Madre</button>
+                </div>
+                <div id="quiz-feedback" class="mt-6 hidden p-4 rounded-xl font-bold"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-950 text-slate-500 text-center">
+        <p class="text-sm">Electiva – Competencias Digitales &copy; 2024</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

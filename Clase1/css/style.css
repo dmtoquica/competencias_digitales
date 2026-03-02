@@ -1,0 +1,48 @@
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+       .gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Safari */
+    -webkit-text-fill-color: transparent;
+}
+
+        .step-node {
+            position: relative;
+        }
+
+        .step-node:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .step-node:not(:last-child)::after {
+                content: '↓';
+                right: auto;
+                bottom: -1.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
